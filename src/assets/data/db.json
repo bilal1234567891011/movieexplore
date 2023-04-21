@@ -1,0 +1,46 @@
+{
+  "signupUsers": [
+    {
+      "fullname": "Bilal Bin Kabeer",
+      "email": "bilalb.kabeer@gmail.com",
+      "password": "bilu",
+      "mobile": 9037519329,
+      "id": 1
+    },
+    {
+      "fullname": "amal",
+      "email": "amal@gmail.com",
+      "password": "amal123",
+      "mobile": 999999999,
+      "id": 2
+    },
+    {
+      "fullname": "sanjay",
+      "email": "sanjay@gamil.com",
+      "password": "sanjay123",
+      "mobile": 9037519445,
+      "id": 3
+    },
+    {
+      "fullname": "bilal",
+      "email": "bilalb555@gmail.com",
+      "password": "bilal555",
+      "mobile": 9847519238,
+      "id": 4
+    },
+    {
+      "fullname": "anu",
+      "email": "anu@gmail.com",
+      "password": "anu123",
+      "mobile": 923456789,
+      "id": 5
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 6
+    }
+  ]
+}

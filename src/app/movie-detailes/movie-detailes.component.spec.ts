@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { MovieDetailesComponent } from './movie-detailes.component';
+
+describe('MovieDetailesComponent', () => {
+  let component: MovieDetailesComponent;
+  let fixture: ComponentFixture<MovieDetailesComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ MovieDetailesComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(MovieDetailesComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

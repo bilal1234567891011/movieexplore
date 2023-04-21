@@ -1,0 +1,58 @@
+<!-- navbarstart -->
+
+<nav class="navbar navbar-expand-lg fixed-top" [ngStyle]="navbg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home">SHOWTIME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search">Search</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+    <!-- navbarend -->
+  
+
+
+    <div class="contain mt-5 p-5">
+        <form [formGroup]="searchForm" (ngSubmit)="searchData()">
+            <div class="row">
+                <div class="mb-3 col-lg-10">
+                    <input type="text" class="form-control"  formControlName="movieName" placeholder="Serch Movie Here ...">
+                  </div>
+    
+                  <div class="col-lg-2">
+                    <button class="btn btn-md">Search</button>
+                  </div>
+            </div>
+    
+        </form>
+
+
+
+   
+        <div class="row mt-5">
+          <div class="col-lg-4" *ngFor="let s of movieList">
+                  <div class="row">
+                      <div class="col-lg-3 mt-4 mb-4" *ngIf="s.poster_path">
+                              <img
+                              src="https://image.tmdb.org/t/p/original/{{ s.poster_path }}" 
+                              [routerLink]="['/movie',s.id]"    
+                              >
+                      </div>
+                      <div class="col-lg-9 mt-4 mb-4">
+                              <h5>{{s.original_title}}</h5>
+                      </div>
+                  </div>
+          </div>
+  </div>
+
+  </div>
